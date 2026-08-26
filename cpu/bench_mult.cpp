@@ -4,8 +4,8 @@
 // Latency = last byte pushed -> message parsed (queue crossing + parse).
 // FPGA analog: one clock domain writes, another reads = async FIFO.
 //
-// Build: g++ -O3 -march=native -std=c++17 -pthread spsc_bench.cpp -o spsc_bench
-// Run:   ./spsc_bench 0 1        (producer core, consumer core)
+// Build: g++ -O3 -march=native -std=c++17 -pthread bench_mult.cpp.cpp -o bench_mult.cpp
+// Run:   ./bench_mult.cpp 0 1        (producer core, consumer core)
 // Tip:   use two separate physical cores (check lscpu -e); sibling
 //        hyperthreads share cache and give misleadingly low numbers.
 
