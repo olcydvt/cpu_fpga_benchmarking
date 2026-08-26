@@ -119,8 +119,4 @@ when logic is complex or changes often, when you need general-purpose work, or
 when the median matters more than the tail. The FPGA wins when the worst case is
 what you are paying for, and the work is simple, fixed, and streaming. A common
 design uses both: FPGA for the fixed, latency-critical front end (decode, filter,
-timestamp), CPU for the flexible work behind it.
-
-## Write-up
-
-Full write-up with figures: see the article (link to your blog post here).
+timestamp), CPU for the flexible work behind it
